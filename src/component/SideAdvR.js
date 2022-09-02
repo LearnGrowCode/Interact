@@ -6,7 +6,7 @@ export default function SideAdvR({Position,HackName,SDate,EDate,Location,HLink})
             <div className="flex flex-col justify-center gap-2 h-[100%] text-sm">
                 <div>Start On : {SDate}</div>
                 <div>End On : {EDate}</div>
-                <div>Venue : {Location}</div>
+                <div>Location : {Location}</div>
                 <div>Link : <a href= {HLink} className="text-blue-900 "  >{HLink}</a></div>
 
             </div>
