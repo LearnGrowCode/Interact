@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rajdhani&display=swap');
+body{
+  background: #622B6B;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.Rajdhani{
+  font-family: 'Rajdhani', sans-serif;
+}
+.vtext{
+  writing-mode: vertical-lr;
+text-orientation:sideways-left;
+}
+
+.vtextL{
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+}
+
