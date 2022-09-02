@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #522251;
+  color: white;
+}
+body{
+  background: url(./starcontact.png);
+}
+.cont {
+  display: flex;
+  height: 1000vh;
+  padding: 8%;
+}
+.firstsec {
+  width: 50vw;
+}
+.secondsec {
+  width: 50vw;
+  margin-left: 5em;
+}
+.kontact {
+  font-family: "Squada One", cursive;
+  font-size: 6.2rem;
+  letter-spacing: 5px;
+}
+.brand {
+  display: flex;
+}
+.branding {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9d84ff;
+}
+.interaction {
+  font-family: "Monoton";
+  color: #ef96ef;
+  letter-spacing: 2px;
+}
+.line {
+  background: #9d84ff;
+  width: 15px;
+  height: 2px;
+  margin-top: 10px;
+}
+.social {
+  display: flex;
+}
+.linkedin {
+  background: rgba(157, 132, 255, 0.16);
+  border: 1px solid rgba(157, 132, 255, 0.4);
+  border-radius: 8000px;
+  width: 3em;
+  height: 3em;
+  margin: 20px;
+}
+.anotherline {
+  background: rgba(255, 251, 255, 0.3);
+  width: 1px;
+  height: 38em;
+  margin-left: 15em;
+}
+.form-control {
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(157, 132, 255, 0.16);
+  color: white;
+  border-radius: 2px;
+  width: 20rem;
+  height: 3.2rem;
+  display: grid;
+  margin-top: 1rem;
+}
