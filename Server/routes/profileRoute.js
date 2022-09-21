@@ -1,14 +1,17 @@
 
 const express = require('express')
-const {getAllUserProfile,getUserProfile,newUserProfile,modifyUserProfile,deleteUserProfile} = require('../controllers/userController')
+const {getAllUserProfile,getUserProfile,newUserProfile,modifyUserProfile,deleteUserProfile,searchAllUserProfile,filterUserProfile} = require('../controllers/userController')
 const router =  express.Router()
 
 
 //To Get All userData
 router.get('/',getAllUserProfile)
 
+//To Get Certain Collection of Data
+router.get('/search/all',filterUserProfile)
 
-
+//To Get Certain Collection of Data
+router.get('/search/results',filterUserProfile)
 
 //To Post All userData
 router.get('/new',newUserProfile)

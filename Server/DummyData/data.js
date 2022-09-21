@@ -2,21 +2,8 @@ require('dotenv').config('../')
 const connectDB = require('../db/connect')
 const userProfile = require('../models/userProfile')
 const userProfileData = [{
-    userName:'Akshay',
-    designation:'Developer',
-    skill:['H','B','C'],
-    about:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    location:'GGN,India'
-},
-{
-    userName:'Mahendra',
-    designation:'Developer',
-    skill:['H','B','C'],
-    about:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    location:'GGN,India'
-},{
-    userName:'Anjali',
-    designation:'Developer',
+    userName:'Developer',
+    designation:'Devloper',
     skill:['H','B','C'],
     about:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     location:'GGN,India'
