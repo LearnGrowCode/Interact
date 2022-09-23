@@ -101,16 +101,16 @@ const SearchFeed = ({s,k}) => {
       <SideAdvR
         Position="30vh"
         HackName="HackRain"
-        SDate="25-June-2025"
-        EDate="25-June-2025"
+        SDate="20/12/2025"
+        EDate="23/12/2025"
         Location="Bhopal"
         HLink="ak123123"
-      />
-      <SideAdvL
-      Position="60vh"
+        />
+        <SideAdvL
+        Position="60vh"
         HackName="HackRain"
-        SDate="25-June-2025"
-        EDate="25-June-2025"
+        SDate="25/11/2025"
+        EDate="29/11/2025"
         Location="Bhopal"
         HLink="www.google.com"
       />

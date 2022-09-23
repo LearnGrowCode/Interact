@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ProfileCard } from "./";
 
 const Profiles = ({Profiles}) => {
-  return Profiles.map(({ userName, designation, skill, about, location }) => (
+  return Profiles.map(({_id, userName, designation, skill, about, location }) => (
 
-    <a href="./viewProfile.html">
+    <Link to={`/profile/${_id}`}>
       <ProfileCard
         userName={userName}
         designation={designation}
@@ -12,7 +13,7 @@ const Profiles = ({Profiles}) => {
         about={about}
         location={location}
       />
-    </a>
+    </Link>
   ));
 };
 

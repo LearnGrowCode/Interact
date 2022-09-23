@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Searchbar = ({setKeyword}) => {
-  let navigation = useNavigate()
+  let navigate = useNavigate()
 const [value, setvalue] = useState("")
+const onhandleSubmit = (e) => {
+  e.preventDefault();
 if(value){
   setKeyword(value)
 } 
+}
   return (
-    <form>
+    <form  onSubmit={onhandleSubmit}>
       <input
       placeholder="Find Your Mate...."
         value={value}
