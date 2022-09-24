@@ -45,7 +45,7 @@ const SearchFeed = ({s,k}) => {
   ]);
 
   const [searchTerm, setSearchTerm] = useState("keyword");
-  const [keyword, setKeyword] = useState("Developer");
+  const [keyword, setKeyword] = useState("Deveopler");
 
   const location = useLocation();
   let params = new URLSearchParams(location.search);
@@ -88,15 +88,20 @@ const SearchFeed = ({s,k}) => {
       navigate(`/search/all/?${searchTerm}=${keyword}`);
     return;
   }, [searchTerm, keyword]);
-  console.log("profiles", profiles);
+  console.log("profiles", profiles );
+  console.log("profiles", profiles == null );
   return (
-    <div className="flex gap-4 pt-8 flex-col">
+    <div className="flex gap-8 pt-8 flex-col">
     <div className="flex flex-col items-center justify-center h-[10vh] ">
     <Searchbar searchCat={searchTerm} setKeyword={setKeyword}  />
     </div>
       <BasicFilter setSearchTerm={setSearchTerm} />
       <div className="flex flex-col items-center align-middle gap-4  w-full sm:grid sm:grid-cols-2 sm:px-8 md:grid-cols-3 lg:px-12 lg:grid-cols-3 xl:grid-cols-4 ">
-        <Profiles Profiles={profiles} />
+       {
+       
+        profiles.length >= 1? <Profiles Profiles={profiles} /> : <div className="text-3xl flex text-white justify-center w-[100vw]">"No Such User Exists "</div>
+      }
+        
       </div>
       <SideAdvR
         Position="30vh"

@@ -83,16 +83,18 @@ nav ul li ul li a {
 .profile_pic{
     background: rgb(98, 43, 107);
 }
+.profileImage{
+  display: flex;
+  justify-content: center
+}
 .profile_circle{
   background-color: #D9D9D9;
   border-radius: 50%;
   width: 25vw;
-  height: 42vh;
-  margin-top: 15%;
-  margin-left: 40%;
+  height: 25vh;
   display: flex;
   justify-content: center;
-  padding-top: 8%;
+  align-items: center;
 
 }
 .camera{
