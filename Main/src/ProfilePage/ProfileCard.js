@@ -16,11 +16,11 @@ const ProfileCard = (profile) => {
   return (
     
     <section className="profile_pic">
-    <div class="profileImage">
+    <div className='profileImage'>
     <div className="profile_circle">
     <img src={camera} className="img-fluid camera" alt=""/>
     </div>
-    </div>
+</div>
 <div className="profile_name ">
   <h3>{ profileData.userName}</h3>
   <h4>{ profileData.designation }</h4>
@@ -50,7 +50,7 @@ const ProfileCard = (profile) => {
 <div >
 <div className="mb-5">
   <label for="exampleFormControlTextarea1" className="form-label">About</label>
-  <textarea type="text" className="form-control input_area" id="exampleFormControlTextarea1"  value={profileData.about} disabled>
+  <textarea type="text" className="form-control input_area" id="exampleFormControlTextarea1"value={profileData.about} disabled>
    </textarea>
 </div>
 </div>

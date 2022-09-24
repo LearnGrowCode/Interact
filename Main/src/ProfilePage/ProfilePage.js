@@ -31,7 +31,7 @@ const ProfilePage = () => {
   },[]);
   return (
     <div className='flex justify-center align-middle'>
-    <div className='w-[80%] flex justify-center align-middle'>
+    <div className='w-[80%]'>
     
     <ProfileCard profileData ={profile}/>
     </div>
