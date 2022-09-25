@@ -14,7 +14,7 @@ router.get('/search/all',filterUserProfile)
 router.get('/search/results',filterUserProfile)
 
 //To Post All userData
-router.get('/new',newUserProfile)
+router.post('/new',newUserProfile)
 
 //To Modify All userData
 router.get('/modify',modifyUserProfile)

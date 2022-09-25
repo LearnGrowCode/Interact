@@ -13,6 +13,10 @@ import p6 from './assets/images/p6.png'
 
 const ProfileCard = (profile) => {
     const {profileData} = profile
+    console.log("profileData",profileData)
+    console.log("profileData skill",profileData.skill)
+    const skill = profileData.skill
+    
   return (
     
     <section className="profile_pic">
@@ -57,37 +61,12 @@ const ProfileCard = (profile) => {
 <div className="mb-5">
   <label for="exampleFormControlTextarea1" className="form-label">Skill</label>
   <div className="row  row-cols-lg-6 g-3 g-lg-4">
+  {skill.map((a,key)=>( 
       <div className="col">
-        <div className="p-3 skill">HTML</div>
+        <div className="p-3 skill">{skill[key]}</div>
       </div>
-      <div className="col">
-        <div className="p-3 skill">CSS</div>
-      </div>
-      <div className="col  col-md-3">
-        <div className="p-3 skill">Flutter</div>
-      </div>
-      <div className="col  col-md-3">
-        <div className="p-3 skill">Firebase</div>
-      </div>
-      <div className="col">
-        <div className="p-3 skill">React</div>
-      </div>
-      <div className="col col-md-4">
-        <div className="p-3 skill ">NodeJs</div>
-      </div>
-      <div className="col">
-        <div className="p-3 skill">JAVA</div>
-      </div>
-      <div className="col  col-sm-4  ">
-        <div className="skill p-3 ">MongoDB</div>
-      </div>
-      <div className="col col-md-5 ">
-        <div className="p-3 skill">Full Stack Development</div>
-      </div>
-      <div className="col col-md-2 ">
-        <div className="p-3 skill">Swift</div>
-      </div>
-    </div>
+  ))}
+  </div>
 </div>
 <div className="mb-5">
   <label for="exampleFormControlTextarea1" className="form-label">Education</label>

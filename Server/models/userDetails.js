@@ -4,28 +4,25 @@ const userSchema = new mongoose.Schema({
   location: { type: String, required: true },
   about: { type: String, required: true },
   skill: {
-    type: String,
-    enum: ["AWS", "HTML", "CSS", "REACT", "FLUTTER"],
+    type: [String],
   },
   designation: {
     type: String,
-    enum: ["FULL STACK DEVELOPER", "ANDROID", "DESIGNER", "CP", "FRONTEND DEVELOPER"],
+    enum: ["FULL STACK DEVELOPER", "ANDROID", "DESIGNER", "CP", "FRONTEND DEVELOPER",""],
   },
   college: {
-    required: true,
     type: String,
   },
   year: {
     type: String,
-    enum: ["FIRST", "SECOND", "THIRD", "FOURTH", "FIFTH"],
+    enum: ["1", "2", "3", "4", "5",""],
   },
   theme: {
     type: String,
-    enum: ["HEALTH", "AI", "BLOCKCHAIN", "OPEN INNOVATION"],
+    enum: ["Health", "Ai", "Blockchain", "Open Innovation",""],
   },
   linkedin: {
     type: String,
-    required: true,
   },
   discord: {
     type: String,
@@ -34,5 +31,5 @@ const userSchema = new mongoose.Schema({
     type: String,
   },
 });
-const userData = new mongoose.model("userData", userSchema);
-module.exports = userData;
+ 
+module.exports = new mongoose.model("userData", userSchema);

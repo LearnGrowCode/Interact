@@ -5,7 +5,8 @@ const ProfilePage = () => {
 
   const [profile, setProfile] = useState({
     userName:"Hero",
-    location:"Comedy"
+    location:"Comedy",
+    skill:["Html","CSS"]
   })
   console.log()
   let {id} = useParams()

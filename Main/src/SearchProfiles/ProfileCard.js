@@ -4,7 +4,7 @@ const ProfileCard = ({userName,designation,skill,about,location}) => {
   console.log("length",skill.length)
   return (
     <div className=' bg-[#ffffff79] p-2'>
-    <div id="Profile-block" className="  flex  flex-col gap-4 h-fit w-fit p-2  rounded-md items-center text-white md:h-[50vh] sm:w-auto sm:h-[40vh]">
+    <div id="Profile-block" className="  flex  flex-col gap-4 h-fit w-fit p-2  rounded-md items-center text-white md:h-[45vh] sm:w-auto sm:h-[40vh]">
     <div id="top " className="grid grid-cols-2 grid-rows-2 w-full   justify-items-center items-center  ">
     <div id="userName" className="row-start-1 row-span-1 h-4 Rajdhani text-3xl tracking-widest
       ">{userName}</div>
