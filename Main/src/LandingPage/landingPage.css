@@ -1,0 +1,219 @@
+.main{
+    background-color: #512252ff;
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+.opening {
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .opening-title {
+    font-family: 'Rubik Glitch', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 90px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+  }
+  
+  .opening-subtitle {
+    margin-top: 20px;
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .opening-button {
+    color: #FFFFFF;
+    font-family: 'Rowdies';
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    align-self: center;
+    box-sizing: border-box;
+    width: 230px;
+    height: 70px;
+    background: rgba(100, 42, 174, 0.21);
+    border: 3px solid #C771EB;
+    box-shadow: 0px 2px 30px rgba(5, 4, 30, 0.39);
+    border-radius: 52px;
+  }
+  .astro-img{
+    position: absolute;
+    top:70px;
+    z-index: -4;
+    object-fit: contain;
+    background: url("./IMAGE.png") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .ending {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+  }
+  .ending-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 61px;
+    color: #FFFFFF;
+  }
+  .ending-grid{
+    margin-top: 100px;
+    display: grid;
+    column-gap: 0px;
+      grid-template-columns: 25% 33% 25%;
+      grid-template-rows: 150px 150px;
+      width: 90%;
+      height: 400px;
+      align-content: stretch;
+      justify-content: space-evenly;
+      row-gap: 20px;
+  }
+  .middle{
+    margin-top: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-content{
+    display: flex;
+    flex-direction: row;
+  }
+  .middle-grid-card{
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  padding: 20px;
+  }
+  .middle-grid-card-title{
+    margin-top: 20px;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #FFFFFF;
+  }
+  .ending-grid-card-1{
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+    grid-row: 1/9;
+    grid-column: 1/3;
+  }
+  .ending-grid-card-2{
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+    grid-row: 1/9;
+    grid-column: 3;
+  }
+  .ending-grid-card-3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    grid-row: 8/9;
+    grid-column: 1/3;
+  }
+  .ending-grid-card-4{
+    grid-row: 8/9;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+    grid-column: 3;
+  }
+  
+  .ending-grid-card-img{
+  width: 49px;
+  height: 49px;
+  border-radius: 0px;
+  margin:10px;
+    background: url("./card-img.png") no-repeat;
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  .ending-grid-card-title{
+    margin-top: 20px;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  /* identical to box height, or 136% */
+  
+  letter-spacing: 0.55px;
+  
+  color: #FFFFFF;
+  }
+  .ending-grid-card-subtitle{
+    font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 20px;
+  width: 70%;
+  letter-spacing: 0.1px;
+  
+  color: #FFFFFF;
+  
+  }
+  .ending-img {
+    position: absolute;
+    background: url("./pillar_ball.png") no-repeat;
+    width: 222px;
+    height: 597px;
+    align-self: center;
+    margin-top: 350px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+  }
+  @media (max-width:768px)
+  {
+    .middle-grid-card-title{
+      font-size: 19px;
+    }
+    .ending-grid-card-subtitle{
+      font-size: 15px;
+    }
+    .ending-grid{
+      grid-template-columns:55% 10%;
+    }
+    .ending-img{
+      display: none;
+    }
+  }

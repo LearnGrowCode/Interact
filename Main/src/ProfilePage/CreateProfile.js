@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import camera from "./assets/images/camera.png";
 import discord from "./assets/images/discord.png";
 import github from "./assets/images/github.png";
@@ -9,8 +10,11 @@ import p3 from "./assets/images/p3.jpg";
 import p4 from "./assets/images/p4.jpg";
 import p5 from "./assets/images/p5.jpg";
 import p6 from "./assets/images/p6.png";
+import  './assets/page2.css'
+import  './assets/style.css'
 
 const CreateProfile = () => {
+  const navigate=  useNavigate()
   const [user, setUser] = useState({
     userName: "",
     designation: "",
@@ -42,7 +46,7 @@ const CreateProfile = () => {
       theme,
     } = user;
 
-    const res = await fetch("http://localhost:5000/profiles/new", {
+    const UserDatas = await fetch("http://localhost:5000/profiles/new", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -58,6 +62,10 @@ const CreateProfile = () => {
         theme,
       }),
     });
+    const UserDetail = await UserDatas.json();
+    const {UserData} = UserDetail
+    navigate(`/profile/${UserData._id}`)
+
   };
   return (
     <div className="flex justify-center align-middle">

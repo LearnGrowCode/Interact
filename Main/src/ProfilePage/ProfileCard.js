@@ -9,7 +9,8 @@ import p3 from './assets/images/p3.jpg'
 import p4 from './assets/images/p4.jpg'
 import p5 from './assets/images/p5.jpg'
 import p6 from './assets/images/p6.png'
-
+import  './assets/page2.css'
+import  './assets/style.css'
 
 const ProfileCard = (profile) => {
     const {profileData} = profile

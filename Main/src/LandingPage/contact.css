@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.contact-home {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-div-1 {
+    flex: 0.5;
+    margin: 50px;
+}
+
+.contact-div-2 {
+    flex: 0.5;
+    margin: 30px;
+}
+
+.div-1-head {
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9D84FF;
+    width: 72px;
+    height: 24px;
+    border: 1px solid #9D84FF;
+    border-radius: 32px;
+}
+
+.div-1-title {
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    color: #F2F2F2;
+    line-break: loose;
+    margin-top: 40px;
+}
+
+.div-1-bottom p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 29px;
+    margin-top: 30px;
+    color: #9D84FF;
+}
+
+.div-1-bottom-social {
+    margin-top: 50px;
+    margin-left: -15px;
+}
+
+.contact-div-2 label {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.contact-div-2-img{
+    margin: 20px;
+    margin-left: 0px;
+    object-fit: contain;
+    background: url("./interact.png") no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 40px;
+    display: flex;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    background: rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(157, 132, 255, 0.16);
+    border-radius: 9.91007px;
+
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #8D6693;
+    font-family: 'Inter';
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+.containerBG{
+   background-color: black; 
+}
