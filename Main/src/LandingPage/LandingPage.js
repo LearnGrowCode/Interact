@@ -45,7 +45,7 @@ const LandingPage = () => {
     </div>
       </div>
     </div>
-    <hr />
+    <hr className=' text-white '/>
     <div className='ending'>
       <h1 className='ending-title'>IDEATE-DESIGN-DEVELOP</h1>
       <div className='ending-grid'>
