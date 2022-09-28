@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import camera from './assets/images/camera.png'
 import discord from './assets/images/discord.png'
 import github from './assets/images/github.png'
@@ -14,8 +14,11 @@ import  './assets/page2.css'
 import  './assets/style.css'
 
 const ProfileCard = (profile) => {
+  const location = useLocation();
+    let params = new URLSearchParams(location.search)
+    console.log(params)
+    const imgNum1 = params.get("imgNum") || 22;
     const {profileData} = profile
-    console.log("profileData is for this car",profileData)
     console.log("profileData skill",profileData.skill)
     const skill = profileData.skill
     const LinkedIn = profileData.linkedin || "#"
@@ -30,8 +33,9 @@ const ProfileCard = (profile) => {
     
     <section className="profile_pic p-8">
     <div className='profileImage'>
-    <div className="profile_circle">
-    <img src={camera} className="img-fluid camera" alt=""/>
+    <div className=''>
+    <img src={`https://randomuser.me/api/portraits/men/${imgNum1}.jpg`} className="img-fluid camera profile_circle" alt=""/>
+    
     </div>
 </div>
 <div className="profile_name ">

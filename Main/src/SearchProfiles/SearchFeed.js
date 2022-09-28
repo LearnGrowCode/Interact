@@ -99,7 +99,7 @@ const SearchFeed = ({s,k}) => {
       <div className="flex flex-col items-center align-middle gap-4  w-full sm:grid sm:grid-cols-2 sm:px-8 md:grid-cols-3 lg:px-12 lg:grid-cols-3 xl:grid-cols-4 ">
        {
        
-        profiles.length >= 1? <Profiles Profiles={profiles} /> : <div className="text-3xl flex text-white justify-center w-[100vw]">"No Such User Exists "</div>
+        profiles.length >= 1? <Profiles Profiles={profiles} /> : <div className="text-3xl flex text-white justify-center w-[100vw] h-[80vh]">"No Such User Exists "</div>
       }
         
       </div>

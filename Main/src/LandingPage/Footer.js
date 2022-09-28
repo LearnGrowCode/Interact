@@ -5,7 +5,7 @@ function Footer() {
     return (
         <>
         <footer className="site-footer">
-      <div className="container containerBG">
+      <div className="container containerBG starsBG">
         <div className="row flex justify-center">
 
           <div className="col-xs-6 col-md-3">

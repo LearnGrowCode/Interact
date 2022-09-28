@@ -4,6 +4,8 @@
 .contact-home {
     display: flex;
     flex-direction: row;
+    height: 91.5vh;
+    width: 100vw;
 }
 
 .contact-div-1 {

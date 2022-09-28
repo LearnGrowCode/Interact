@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rajdhani&display=swap');
 body{
-  background: #512252ff;
+  background: radial-gradient(circle, rgba(182,84,185,1) 6%, rgba(206,3,184,1) 43%, rgba(173,32,185,1) 84%);
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
 }

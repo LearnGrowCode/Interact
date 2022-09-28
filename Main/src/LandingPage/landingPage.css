@@ -4,6 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.container{
+  margin-bottom: 2%;
+}
+.stars2{
+  background: url('./stars.png') repeat;
+  background-size: cover;
+}
 .opening {
     display: flex;
     width: 100%;
@@ -53,7 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('./IMAGE.png') no-repeat;
+    background: url('./astroImg.png') no-repeat;
     background-size: cover;
     width: 100%;
     height: 80vh;
@@ -68,6 +75,7 @@
     flex-direction: column;
     margin-top: 100px;
     align-items: center;
+   
   }
   .ending-title {
     font-family: 'Inter';

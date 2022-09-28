@@ -7,6 +7,11 @@
   font-size:15px;
   line-height:24px;
   color:#737373;
+  
+}
+.starsBG{
+  background: url('./stars.png') no-repeat;
+  background-size: cover;
 }
 .site-footer hr
 {

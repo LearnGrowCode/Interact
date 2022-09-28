@@ -22,9 +22,9 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="middle">
+      <div className="middle stars2">
         <h1 className="ending-title">FINDING PROCESS</h1>
-        <div className="middle-content">
+        <div className="middle-content ">
           <div className="middle-grid-card">
             <div className="middle-grid-card-title">Step 1</div>
             <div className="ending-grid-card-subtitle">
@@ -71,7 +71,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="ending">
+      <div className="ending stars2">
         <h1 className="ending-title">IDEATE-DESIGN-DEVELOP</h1>
         <div className="ending-grid">
           <div className="ending-img"></div>

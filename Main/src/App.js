@@ -10,6 +10,7 @@ import CreateProfile from './ProfilePage/CreateProfile';
 import LandingPage from './LandingPage/LandingPage';
 import Contact from './LandingPage/Contact';
 import Header from './LandingPage/Header';
+import Image from './APICHecking/Image';
 
 // import Navbar from './component/navbar';
 const axios = require('axios').default;
@@ -27,6 +28,7 @@ function App() {
       <Route  path='/create/profile/' element ={<CreateProfile/>} ></Route>
       <Route  path='/home' element ={<Home/>} ></Route>
       <Route  path='/contact' element ={<Contact/>} ></Route>
+      <Route  path='/image' element ={<Image/>} ></Route>
       <Route  path='*' element ={<h1>Not Found</h1>} ></Route>
       </Routes>
       </BrowserRouter>
