@@ -1,4 +1,3 @@
-const userProfile = require("../models/userProfile");
 const userData = require("../models/userDetails");
 
 const getAllUserProfile = async (req, res) => {

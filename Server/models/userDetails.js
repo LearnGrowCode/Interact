@@ -8,7 +8,6 @@ const userSchema = new mongoose.Schema({
   },
   designation: {
     type: String,
-    enum: ["FULL STACK DEVELOPER", "ANDROID", "DESIGNER", "CP", "FRONTEND DEVELOPER",""],
   },
   college: {
     type: String,
@@ -19,7 +18,6 @@ const userSchema = new mongoose.Schema({
   },
   theme: {
     type: String,
-    enum: ["Health", "Ai", "Blockchain", "Open Innovation",""],
   },
   linkedin: {
     type: String,
