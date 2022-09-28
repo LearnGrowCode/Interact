@@ -24,6 +24,10 @@ const CreateProfile = () => {
     year: "",
     college: "",
     theme: "",
+    github:"",
+    discord:"",
+    linkedin:""
+
   });
   let name, value;
 
@@ -44,6 +48,9 @@ const CreateProfile = () => {
       year,
       college,
       theme,
+      github,
+      linkedin,
+      discord
     } = user;
 
     const UserDatas = await fetch("http://localhost:5000/profiles/new", {
@@ -60,6 +67,9 @@ const CreateProfile = () => {
         year,
         college,
         theme,
+        github,
+        linkedin,
+        discord
       }),
     });
     const UserDetail = await UserDatas.json();
@@ -68,7 +78,7 @@ const CreateProfile = () => {
 
   };
   return (
-    <div className="flex justify-center align-middle">
+    <div className="flex justify-center align-middle p-8">
       <div className="w-[80%]">
         <section className="profile_pic">
           <div className="profileImage">
@@ -231,6 +241,9 @@ const CreateProfile = () => {
                 <div className="col-11">
                   <input
                     type="url"
+                    name="github"
+                    onChange={handleChange}
+                    value={user.linkdn}
                     className="form-control input_area"
                     id="exampleFormControlInput1"
                   />
@@ -243,7 +256,7 @@ const CreateProfile = () => {
                 <div className="col-11">
                   <input
                     name="linkedin"
-                    value={user.linkdn}
+                    value={user.linkedin}
                 onChange={handleChange}
                     type="url"
                     className="form-control input_area"
@@ -257,6 +270,8 @@ const CreateProfile = () => {
                 </div>
                 <div className="col-11">
                   <input
+                  name="discord"
+                  onChange={handleChange}
                     type="url"
                     className="form-control input_area"
                     id="exampleFormControlInput1"

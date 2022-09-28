@@ -63,8 +63,10 @@ const filterUserProfile = async (req, res) => {
 };
 
 const newUserProfile = async (req, res) => {
-  const {userName,designation,about,location,skill,year,college,theme}=req.body
-  const UserData = new userData({userName,designation,about,location,skill,year,college,theme})
+  const {userName,designation,about,location,skill,year,college,theme,linkedin,discord,github}=req.body
+  console.log(req.body)
+  const UserData = new userData({userName,designation,about,location,skill,year,college,theme,github,linkedin,discord,github})
+  console.log(UserData)
   // const UserData = new userData({userName:"Akshay",designation:"ANDROID",about:"Akshay",location:"Akshay",skill:"Akshay",year:"FIRST",college:"",theme:"HEALTH"})
   await UserData.save()
   res.status(200).json({UserData})

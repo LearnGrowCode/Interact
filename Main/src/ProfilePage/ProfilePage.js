@@ -24,14 +24,14 @@ const ProfilePage = () => {
       console.log("UsersData is ",UsersData)
       const {profileData} =  UsersData
       setProfile(UsersData)
-      console.log("profile value is ",profile)
+      console.log("profile value is new Profiles ",profile)
     }
     getUserData();
     console.log("profile data is outer",profile)
     return;
   },[]);
   return (
-    <div className='flex justify-center align-middle'>
+    <div className='flex justify-center align-middle '>
     <div className='w-[80%]'>
     
     <ProfileCard profileData ={profile}/>

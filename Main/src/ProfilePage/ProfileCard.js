@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import camera from './assets/images/camera.png'
 import discord from './assets/images/discord.png'
 import github from './assets/images/github.png'
@@ -14,13 +15,20 @@ import  './assets/style.css'
 
 const ProfileCard = (profile) => {
     const {profileData} = profile
-    console.log("profileData",profileData)
+    console.log("profileData is for this car",profileData)
     console.log("profileData skill",profileData.skill)
     const skill = profileData.skill
+    const LinkedIn = profileData.linkedin || "#"
+    const GitHub = profileData.github || "#"
+    const Discord = profileData.discord || "#"
+    // const absoulteUrl = new URL(LinkedIn)
+    const absoulteUrl = LinkedIn
+
+    console.log("# datas ",LinkedIn,GitHub,Discord)
     
   return (
     
-    <section className="profile_pic">
+    <section className="profile_pic p-8">
     <div className='profileImage'>
     <div className="profile_circle">
     <img src={camera} className="img-fluid camera" alt=""/>
@@ -33,18 +41,19 @@ const ProfileCard = (profile) => {
 <div className="container pics">
   <div className="row row-cols-3 row-cols-sm-6  g-sm-2">
     <div className="col">
-      <div className="p-2">
+      <a className="p-2" href ={Discord} target="_blank" rel="noreferrer" >
 <img className="img-fluid fotu" src={discord} alt=""/>
-      </div>
+      </a>
     </div>
     <div className="col ">
-      <div className="p-2">
-      <img className="img-fluid fotu" src={github} alt=""/></div>
+      <a className='p-2' href={GitHub} target="_blank" rel="noreferrer" >
+      <img className="img-fluid fotu" src={github} alt=""/>
+      </a>
     </div>
-    <div className="col">
-      <div className="p-2">
+        <div className="col">
+      <a className="p-2" href={LinkedIn} target="_blank"  rel="noopener noreferrer external">
       <img className="img-fluid fotu" src={linkdn} alt=""/>
-    </div>
+    </a>
     </div>
   </div>
 </div>
