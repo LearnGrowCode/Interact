@@ -19,11 +19,11 @@ function Header() {
         <div>
           <ul className="nav-ul">
             <li className="nav-item">
-              <Link to="/search" className=' hover:text-yellow-200 bg-black p-2'>Find Teammates</Link>
+              <Link to="/search" className=' hover:text-yellow-200 '>Find Teammates</Link>
             </li>
             <li className="nav-item">Log-in</li>
             <li className="nav-item">
-              <Link to="/contact/" className=' hover:text-yellow-200 bg-black p-2'>Contact</Link>
+              <Link to="/contact/" className=' hover:text-yellow-200 '>Contact</Link>
             </li>
           </ul>
         </div>

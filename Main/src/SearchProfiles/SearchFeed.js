@@ -44,7 +44,7 @@ const SearchFeed = ({s,k}) => {
     },
   ]);
 
-  const [searchTerm, setSearchTerm] = useState("keyword");
+  const [searchTerm, setSearchTerm] = useState("all");
   const [keyword, setKeyword] = useState("Deveopler");
 
   const location = useLocation();
@@ -113,7 +113,7 @@ const SearchFeed = ({s,k}) => {
         />
         <SideAdvL
         Position="60vh"
-        HackName="HackRain"
+        HackName="HackFeasta"
         SDate="25/11/2025"
         EDate="29/11/2025"
         Location="Bhopal"

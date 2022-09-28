@@ -72,7 +72,7 @@ const Feed = () => {
         </div>
         <SideAdvR
         Position="30vh"
-        HackName="HackRain"
+        HackName="HackToshia"
         SDate="20/12/2025"
         EDate="23/12/2025"
         Location="Bhopal"
@@ -80,7 +80,7 @@ const Feed = () => {
         />
         <SideAdvL
         Position="60vh"
-        HackName="HackRain"
+        HackName="FeastHack"
         SDate="25/11/2025"
         EDate="29/11/2025"
         Location="Bhopal"

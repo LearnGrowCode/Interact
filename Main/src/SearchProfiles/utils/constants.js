@@ -12,5 +12,7 @@ export const filter = [{
 },
 {
   name:'about'
-},
+},{
+  name:'all'
+}
   ];

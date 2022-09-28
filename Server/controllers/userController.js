@@ -13,7 +13,7 @@ const searchAllUserProfile = async (req, res) => {
 };
 
 const filterUserProfile = async (req, res) => {
-  const { userName, designation, skill, about, location, keyword, keywords } =
+  const { userName, designation, skill, about, location, all, keywords } =
     req.query;
   var getUserData = "[]";
   if (req.query.userName) {
@@ -25,7 +25,7 @@ const filterUserProfile = async (req, res) => {
     var getUserData = await userData.find({ designation: Designation });
   }
   if (req.query.skill) {
-    const Skill = { $regex: req.query.userName, $options: "i" };
+    const Skill = { $regex: req.query.skill, $options: "i" };
     var getUserData = await userData.find({ skill: Skill });
   }
   if (req.query.about) {
@@ -36,8 +36,8 @@ const filterUserProfile = async (req, res) => {
     const Location = { $regex: req.query.location, $options: "i" };
     var getUserData = await userData.find({ location: Location });
   }
-  if (req.query.keyword) {
-    const Keyword = { $regex: req.query.keyword, $options: "i" };
+  if (req.query.all) {
+    const Keyword = { $regex: req.query.all, $options: "i" };
     var getUserData = await userData.find({
       $or: [
         { userName: Keyword },
