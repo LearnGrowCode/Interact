@@ -91,7 +91,7 @@ const SearchFeed = ({s,k}) => {
   console.log("profiles", profiles );
   console.log("profiles", profiles == null );
   return (
-    <div className="flex gap-8 pt-8 flex-col">
+    <div className="flex gap-8 pt-8 flex-col h-[100%]">
     <div className="flex flex-col items-center justify-center h-[10vh] ">
     <Searchbar searchCat={searchTerm} setKeyword={setKeyword}  />
     </div>

@@ -4,14 +4,9 @@ import camera from "./assets/images/camera.png";
 import discord from "./assets/images/discord.png";
 import github from "./assets/images/github.png";
 import linkdn from "./assets/images/linkdn.png";
-import p1 from "./assets/images/p1.jpg";
-import p2 from "./assets/images/p2.jpg";
-import p3 from "./assets/images/p3.jpg";
-import p4 from "./assets/images/p4.jpg";
-import p5 from "./assets/images/p5.jpg";
-import p6 from "./assets/images/p6.png";
 import  './assets/page2.css'
 import  './assets/style.css'
+import './assets/index'
 
 const CreateProfile = () => {
   const navigate=  useNavigate()
@@ -32,9 +27,15 @@ const CreateProfile = () => {
   let name, value;
 
   const handleChange = (e) => {
-    console.log(e);
     name = e.target.name;
     value = e.target.value;
+    setUser({ ...user, [name]: value });
+  };
+  const handleChange1 = (e) => {
+    name = e.target.name;
+    var skill  = e.target.value;
+    value = skill.split(/,/);
+    console.log(value)
     setUser({ ...user, [name]: value });
   };
   const PostTData = async (e) => {
@@ -78,9 +79,9 @@ const CreateProfile = () => {
 
   };
   return (
-    <div className="flex justify-center align-middle p-8">
+    <div className="flex justify-center align-middle p-4">
       <div className="w-[80%]">
-        <section className="profile_pic">
+        <section className="profile_pic p-2">
           <div className="profileImage">
             <div className="profile_circle">
               <img src={camera} className="img-fluid camera" alt="" />
@@ -134,18 +135,14 @@ const CreateProfile = () => {
               <label for="skill" className="form-label">
                 Skills
               </label>
-              <select name="skill" value={user.skill}
-              onChange={handleChange} multiple data-multi-select-plugin>
-                <option value="HTML" selected>
-                  HTML
-                </option>
-                <option value="CSS">CSS</option>
-                <option value="React">React</option>
-                <option value="Flutter">Flutter</option>
-                <option value="AWS">AWS</option>
-                <option value="Full Stack">Full Stack</option>
-                <option value="IOS">IOs</option>
-              </select>
+              <input
+            value={user.skill}
+            name = "skill"
+            onChange={handleChange1}
+              className="form-control input_area"
+              placeholder="Type your skill..."
+            />
+
             </div>
             <label for="designation" className="form-label">
               What Describes you best?
@@ -154,20 +151,10 @@ const CreateProfile = () => {
             value={user.designation}
             onChange={handleChange}
               className="form-control input_area"
-              list="datalistOptions"
-              id="exampleDataList"
+              maxlength="20"
               name="designation"
-              placeholder="Type to search..."
+              placeholder="What you call yourself?."
             />
-            <select id="datalistOptions">
-              <option value="Full Stack Developer">Full Stack Developer</option>
-              <option value="Android Developer">
-                Android DeveloperAndroid Developer
-              </option>
-              <option value="Designer">DesignerDesigner</option>
-              <option value="Frontend Developer">Frontend Dev</option>
-              <option value="Coder">Coder</option>
-            </select>
             <div className="row g-2">
               <div className="col-md">
                 <label for="college" className="form-label">
@@ -287,6 +274,7 @@ const CreateProfile = () => {
           </div>
         </section>
       </div>
+      
     </div>
   );
 };

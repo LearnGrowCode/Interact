@@ -16,7 +16,7 @@ export default function SideAdvR({
           <div className="flex w-[100%] justify-between   h-20vh items-center ">
             <div className="text-3xl  font-bold ">{HackName}</div>
            
-              <a href="#">
+            <a href="https://devfolio.co/" target="_blank">
                 <svg
                   width="50"
                   height="50"
