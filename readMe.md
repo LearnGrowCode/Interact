@@ -29,3 +29,7 @@ Overall, Interact provides a valuable platform for individuals with shared inter
 **Please connect MongoDB && API**
 
 
+Screenshot of Website
+
+
+
