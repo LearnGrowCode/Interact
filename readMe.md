@@ -29,7 +29,21 @@ Overall, Interact provides a valuable platform for individuals with shared inter
 **Please connect MongoDB && API**
 
 
-Screenshot of Website
+# Screenshot of Website
+
+## Home Page
+![image](https://user-images.githubusercontent.com/50509605/225870069-d48b8000-0025-46b5-b43f-b4a62dcf0b0c.png)
+
+## Search Page
+![image](https://user-images.githubusercontent.com/50509605/225870358-91736d4f-8e1f-4dad-ac4d-4f7953c8c626.png)
+
+## Create Your Profile
+![image](https://user-images.githubusercontent.com/50509605/225870820-65d364b5-cf19-4436-9056-8ce2ff955da4.png)
+
+## Contact Us
+![image](https://user-images.githubusercontent.com/50509605/225870539-77059e9b-6a8c-4f98-9b9d-9f69aa313b5d.png)
+
+
 
 
 
