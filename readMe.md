@@ -1,4 +1,4 @@
-#Welcome to Interact
+# Welcome to Interact
 
 Interact is a platform designed to connect individuals with a shared passion for technology to collaborate and work on projects together. The platform is specifically tailored towards individuals who are interested in participating in hackathons or who are searching for a project partner.
 
@@ -9,21 +9,21 @@ Furthermore, the platform allows users to toggle between active and inactive sta
 Overall, Interact provides a valuable platform for individuals with shared interests to come together and collaborate on technology-focused projects. It offers a streamlined approach to finding project partners and reduces the time and effort required to identify compatible individuals to work with.
 
 
-#Setup Guide
+# Setup Guide
 
-###Clone the repo
+### Clone the repo
 >git clone https://github.com/akshay-Kalekar/Interact.git
 
-###Change directory and install the packages in respected folder
+### Change directory and install the packages in respected folder
 >cd Main && npm i 
 >cd Server && npm i
 
 ### Run Server in both folder
 
-//In Main Folder
+// In Main Folder
 >npm run start 
 
-//In Server Folder
+// In Server Folder
 >npm run dev
 
 **Please connect MongoDB && API**
