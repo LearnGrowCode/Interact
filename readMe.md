@@ -31,8 +31,20 @@ Overall, Interact provides a valuable platform for individuals with shared inter
 
 # Screenshot of Website
 
-## Home Page
-![image](https://user-images.githubusercontent.com/50509605/225870069-d48b8000-0025-46b5-b43f-b4a62dcf0b0c.png)
+**HOME PAGE**
+
+![image](https://user-images.githubusercontent.com/97843629/225887996-eac0d2b6-dc67-4e11-9784-9859239ec5e0.png)
+
+![image](https://user-images.githubusercontent.com/97843629/225888211-fd7d05bd-833a-41c3-8cf7-010745bdd414.png)
+ 
+ **Find Team**
+ 
+ ![image](https://user-images.githubusercontent.com/97843629/225888367-90982d11-ba5e-4f26-8a7a-d5492e629e23.png)
+ 
+  **Contact Us**
+ 
+ ![image](https://user-images.githubusercontent.com/97843629/225888548-4cc835e0-aa3d-4208-90fb-fad5b36af5f5.png)
+
 
 ## Search Page
 ![image](https://user-images.githubusercontent.com/50509605/225870358-91736d4f-8e1f-4dad-ac4d-4f7953c8c626.png)
