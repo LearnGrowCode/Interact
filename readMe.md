@@ -8,6 +8,7 @@ Furthermore, the platform allows users to toggle between active and inactive sta
 
 Overall, Interact provides a valuable platform for individuals with shared interests to come together and collaborate on technology-focused projects. It offers a streamlined approach to finding project partners and reduces the time and effort required to identify compatible individuals to work with.
 
+Design link : https://www.figma.com/design/iPglPOCy2lYT9yaaaiNy3s/Hacking-Heist-2.0-(Copy)
 
 # Setup Guide
 
