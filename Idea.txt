@@ -1,0 +1,9 @@
+Feature for filling new_profile 
+    Suggestion for colleges
+    Location Suggestion 
+    skill auto suggest like daily dev
+    limit char for description
+    multi theme selections
+    upload image feature
+    suggest dummy avatars if don't wish to upload
+Authetication
